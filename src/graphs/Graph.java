@@ -92,6 +92,11 @@ public class Graph {
         graph.dfs_with_disjoint_graphs(V,graph,graphList);
     }
 
+    public void printAllPossiblePaths(int V,Graph graph,ArrayList<Edge>[] graphList){
+        boolean visited[] = new boolean[V];
+
+    }
+
     public  void bfs_with_disjoint_graphs(int V, Graph graph, ArrayList<Edge>[] graphList) {
         boolean visited[] = new boolean[V];
         for(int i=0;i<visited.length;i++){
