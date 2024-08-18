@@ -61,6 +61,18 @@ public class Graph {
         }
     }
 
+    public void depthFirstSearch(ArrayList<Edge>[] graph, boolean[] visited, int curr){
+        // DFS - time complexicity - O(V+E)
+        System.out.print(curr + " ");
+         visited[curr] = true;
+        for(int i=0;i<graph[curr].size();i++){
+            Edge e = graph[curr].get(i);
+            if(visited[e.dest] == false)
+                depthFirstSearch(graph,visited,e.dest);
+        }
+
+    }
+
     public static void main(String[] args) {
         int V = 7; // vertices -V
         /*
@@ -76,6 +88,8 @@ public class Graph {
         graph.createGraph(graphList);
         graph.printGraph(graphList);
         graph.bfs_with_disjoint_graphs(V, graph, graphList);
+        System.out.println();
+        graph.dfs_with_disjoint_graphs(V,graph,graphList);
     }
 
     public  void bfs_with_disjoint_graphs(int V, Graph graph, ArrayList<Edge>[] graphList) {
@@ -83,6 +97,15 @@ public class Graph {
         for(int i=0;i<visited.length;i++){
             if(visited[i] == false){
                 graph.breathFirstSearch(graphList, V,visited,i);
+            }
+        }
+    }
+
+    public  void dfs_with_disjoint_graphs(int V, Graph graph, ArrayList<Edge>[] graphList) {
+        boolean visited[] = new boolean[V];
+        for(int i=0;i<visited.length;i++){
+            if(visited[i] == false){
+                graph.depthFirstSearch(graphList,visited,i);
             }
         }
     }
