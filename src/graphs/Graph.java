@@ -43,12 +43,11 @@ public class Graph {
         }
     }
 
-    public void breathFirstSearch(ArrayList<Edge>[] graph, int V){
+    public void breathFirstSearch(ArrayList<Edge>[] graph, int V, boolean[] visited, int start){
         // BFS - time complexicity - O(V+E)
         Queue<Integer> q = new LinkedList<>();
-        boolean visited[] = new boolean[V];
         // defineing starting point of graph - 0
-        q.add(0);
+        q.add(start);
         while(!q.isEmpty()){
             int curr = q.remove();
             if(visited[curr] == false){
@@ -76,6 +75,15 @@ public class Graph {
         ArrayList<Edge>  graphList[] = new ArrayList[V];
         graph.createGraph(graphList);
         graph.printGraph(graphList);
-        graph.breathFirstSearch(graphList,V);
+        graph.bfs_with_disjoint_graphs(V, graph, graphList);
+    }
+
+    public  void bfs_with_disjoint_graphs(int V, Graph graph, ArrayList<Edge>[] graphList) {
+        boolean visited[] = new boolean[V];
+        for(int i=0;i<visited.length;i++){
+            if(visited[i] == false){
+                graph.breathFirstSearch(graphList, V,visited,i);
+            }
+        }
     }
 }
