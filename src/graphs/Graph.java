@@ -90,25 +90,11 @@ public class Graph {
         graph.bfs_with_disjoint_graphs(V, graph, graphList);
         System.out.println();
         graph.dfs_with_disjoint_graphs(V,graph,graphList);
-        System.out.println();
-        System.out.println("Printing All Paths from 0 -> 5");
-        boolean visited[] = new boolean[V];
-        graph.printPaths(graphList,visited,0,"0",5);
     }
 
-    public void printPaths(ArrayList<Edge>[] graph, boolean[] visited, int curr, String path, int target) {
-        if(curr == target){
-            System.out.println(path);
-            return;
-        }
-        for(int i=0;i<graph[curr].size();i++){
-            Edge e = graph[curr].get(i);
-            if(visited[e.dest] == false){
-                visited[curr] = true;
-                printPaths(graph,visited,e.dest,path+e.dest,target);
-                visited[curr] = false;
-            }
-        }
+    public void printAllPossiblePaths(int V,Graph graph,ArrayList<Edge>[] graphList){
+        boolean visited[] = new boolean[V];
+
     }
 
     public  void bfs_with_disjoint_graphs(int V, Graph graph, ArrayList<Edge>[] graphList) {
