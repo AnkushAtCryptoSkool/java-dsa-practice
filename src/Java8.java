@@ -11,7 +11,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Java8 {
+     static String a = "0";
     public static void main(String[] args) {
+        System.out.println(Java8.a);
         List<Integer> list = Arrays.asList(1,232,43,23,12,23,42,43,12,32);
         System.out.println(list);
         System.out.println("first occuerence");
