@@ -3,15 +3,7 @@ package stacks;
 import java.util.Arrays;
 import java.util.Stack;
 
-class Pair{
-    int val;
-    int idx;
-    Pair(int val,int idx){
-        this.val = val;
-        this.idx = idx;
-    }
 
-}
 public class StockSpanProblem {
 
     public static void main(String[] args) {

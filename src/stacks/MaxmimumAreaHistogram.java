@@ -1,15 +1,9 @@
+import stacks.Pair;
+
 import java.util.Arrays;
 import java.util.Stack;
 
-class Pair{
-    int val;
-    int idx;
 
-    public Pair(int val, int idx) {
-        this.val = val;
-        this.idx = idx;
-    }
-}
 public class MaxmimumAreaHistogram {
 
     public static void main(String[] args) {
