@@ -1,19 +1,23 @@
 public class Employeee {
-    private int id;
+    private String id;
     private String name;
 
-    public static String company = "ABC";
+    private String company;
 
-    public Employeee(int id, String name) {
+    private Integer salary;
+
+    public Employeee(String id, String name, String company, Integer salary) {
         this.id = id;
         this.name = name;
+        this.company = company;
+        this.salary = salary;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -25,12 +29,19 @@ public class Employeee {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Employeee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", company='" + company + '\'' +
-                '}';
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public Integer getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Integer salary) {
+        this.salary = salary;
     }
 }

@@ -1,3 +1,5 @@
+package dsaImpl;
+
 public class LL {
     LL(){
         count = 0;
@@ -73,7 +75,7 @@ public class LL {
         LL ll = new LL();
         ll.add("this");
         ll.add("is");
-        ll.add("LL");
+        ll.add("dsaImpl.LL");
         ll.print();
         System.out.println();
         ll.delete(0);

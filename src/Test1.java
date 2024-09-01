@@ -4,9 +4,9 @@ import java.util.stream.Collectors;
 
 public class Test1 {
     public static void main(String[] args) {
-        List<Employeee> empList = Arrays.asList(new Employeee(1,"Ankush"),new Employeee(2,"Ram"),new Employeee(3,"AB"));
-        List<Integer> ids = empList.stream().filter(emp -> emp.getName() == "Ankush").map(emp -> emp.getId()).collect(Collectors.toList());
-        System.out.println(ids);
+//        List<Employeee> empList = Arrays.asList(new Employeee(1,"Ankush"),new Employeee(2,"Ram"),new Employeee(3,"AB"));
+//        List<Integer> ids = empList.stream().filter(emp -> emp.getName() == "Ankush").map(emp -> emp.getId()).collect(Collectors.toList());
+//        System.out.println(ids);
         Test1 t = new Test1();
         int arr[] = {0,0,1,1,1,2,2,3,3,4};
         int ans = t.removeElement(arr,2);

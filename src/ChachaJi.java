@@ -11,9 +11,5 @@ public class ChachaJi {
     }
         private static void dosmoe(){
 //        int  a = 100;
-        Empolye em = ()->{
-            int  a = 200;
-            System.out.println(a);
-          };
-        }
+            }
 }
