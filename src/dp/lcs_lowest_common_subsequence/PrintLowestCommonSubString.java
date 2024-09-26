@@ -26,7 +26,9 @@ public class PrintLowestCommonSubString {
                 if(x[i-1] == y[j-1]){
                     T[i][j] = 1+T[i-1][j-1];
                     if(T[i][j] > maxLen){
+                        // max length likal lo
                         maxLen = T[i][j];
+                        // last index nikal lo for that longest string
                         endIndex = i-1;
                     }
                 }
