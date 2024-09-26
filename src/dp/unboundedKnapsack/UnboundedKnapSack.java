@@ -1,4 +1,4 @@
-package dp;
+package dp.unboundedKnapsack;
 
 public class UnboundedKnapSack {
     public static void main(String[] args) {

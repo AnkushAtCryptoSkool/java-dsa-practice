@@ -1,4 +1,4 @@
-package dp;
+package dp.knapsack;
 
 public class CountOfSubSetSum_With_GivenSum {
     public static void main(String[] args) {

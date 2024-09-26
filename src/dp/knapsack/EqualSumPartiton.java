@@ -1,4 +1,4 @@
-package dp;
+package dp.knapsack;
 
 public class EqualSumPartiton {
     static boolean T[][] = new boolean[1000][1000];

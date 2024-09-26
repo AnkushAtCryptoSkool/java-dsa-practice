@@ -1,4 +1,4 @@
-package dp;
+package dp.unboundedKnapsack;
 
 public class Rod_Cutting_Unbounded_KnapSack {
     public static void main(String[] args) {

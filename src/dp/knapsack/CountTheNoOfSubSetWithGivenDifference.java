@@ -1,6 +1,6 @@
-package dp;
+package dp.knapsack;
 
-public class TargetSum_Same_As_Count_TheNo_Of_SubSet_With_Given_Diffference {
+public class CountTheNoOfSubSetWithGivenDifference {
     public static void main(String[] args) {
         int arr[] = {1,1,2,3};
         int diff = 1;
@@ -41,4 +41,5 @@ public class TargetSum_Same_As_Count_TheNo_Of_SubSet_With_Given_Diffference {
         }
         return T[arr.length][sum];
     }
+
 }
